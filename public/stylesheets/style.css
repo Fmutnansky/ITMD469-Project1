@@ -1,8 +1,11 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#map {
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+/* Makes the map fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
