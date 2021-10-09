@@ -7,11 +7,21 @@
   <title>LandNav App</title>
   <link rel="stylesheet" href="./stylesheets/style.css">
   <link rel="stylesheet" href="./stylesheets/normalize.css">
-  <script src="./javascripts/map.js"></script>
+  <script src="./javascripts/scripts.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-JDVwIAYMsg-ieSapBjJeZZQL6kPc-wA&callback=initMap"></script>
 </head>
 
 <body>
+
+   <div id="mySidebar" class="sidebar">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+     <a href="#">Join Call</a>
+   </div>
+
+   <div id="main">
+     <button class="openbtn" onclick="openNav()">Contact</button>
+   </div>
+
    <div id="map"></div>
 
 </body>
