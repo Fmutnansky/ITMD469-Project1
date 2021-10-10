@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <title>LandNav App</title>
   <link rel="stylesheet" href="./stylesheets/style.css">
   <link rel="stylesheet" href="./stylesheets/normalize.css">
@@ -15,7 +15,12 @@
 
    <div id="mySidebar" class="sidebar">
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-     <a href="#">Join Call</a>
+     <button type="button" class="join" id="call-button">Join Call</button>
+     <video id="self"
+       autoplay
+       muted
+       playsinline>
+     </video>
    </div>
 
    <div id="main">
