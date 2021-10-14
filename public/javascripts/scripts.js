@@ -26,7 +26,7 @@ function closeNav() {
 }
 
 const $self = {
-  constraints: { audio: false, video: true }
+  constraints: { audio: true, video: true }
 };
 
 requestUserMedia($self.constraints);
