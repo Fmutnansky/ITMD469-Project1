@@ -4,11 +4,11 @@
 /**
  * Module dependencies.
  */
-
 var { readFileSync } = require('fs');
 var app = require('../app');
 var debug = require('debug')('project1:server');
 var https = require('https');
+var io = require('socket.io')();
 
 /**
  * Module dependencies.
@@ -36,6 +36,10 @@ var server = https.createServer(config, app);
 /**
  * Listen on provided port, on all network interfaces.
  */
+
+ // Attach Socket.io instance to our HTTPS server
+io.attach(server);
+
 
 server.listen(port);
 server.on('error', onError);

@@ -7,6 +7,7 @@
   <title>LandNav App</title>
   <link rel="stylesheet" href="./stylesheets/style.css">
   <link rel="stylesheet" href="./stylesheets/normalize.css">
+  <script src="./javascripts/scripts.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-JDVwIAYMsg-ieSapBjJeZZQL6kPc-wA&callback=initMap"></script>
 </head>
 
@@ -15,13 +16,20 @@
    <div id="mySidebar" class="sidebar">
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
      <button type="button" class="join" id="call-button">Join Call</button>
-     <video id="self"
-       autoplay
-       muted
-       playsinline>
-     </video>
-
-     <script src="./javascripts/scripts.js"></script>
+     <article id="videos">
+       <video id="self"
+         autoplay
+         muted
+         playsinline>
+       </video>
+       <video id="peer"
+         autoplay
+         playsinline>
+       </video>
+     </article>
+     <script src="/socket.io/socket.io.js"></script>
+     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+     <script src="./javascripts/video.js"></script>
    </div>
 
    <div id="main">
